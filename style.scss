@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #0A1216;
+}
+
+header {
+    background: url(backgroundimage.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    position: relative;
+
+    nav {
+        height: 150px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background: transparent;
+        color: white;
+        position: absolute;
+        z-index: 2;
+
+        .logo img {
+            width: 45%;
+        }
+
+        .list {
+            display: flex;
+            gap: 42px;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+                font-size: 16px;
+                color: #fffffffc;
+            }
+
+            a:first-child {
+                border-bottom: 2px solid #cb880c;
+                padding: 8px 14px;
+            }
+        }
+
+        button {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.9882352941);
+            background-color: #cb880c;
+            font-weight: 700;
+            padding: 15px 16px;
+            border: none;
+            border-radius: 4px;
+        }
+    }
+
+    .overlay {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+    }
+
+    .heroSection {
+        width: 100%;
+        position: absolute;
+        z-index: 2;
+        box-sizing: border-box;
+        top: 50%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .uperLine {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            position: absolute;
+            z-index: 2;
+            top: -13px;
+
+
+
+            span {
+                width: 87px;
+                background-color: #cb880c;
+                height: 2px;
+            }
+        }
+
+        #lineOne {
+            color: #ffffffd6;
+            font-size: 22px;
+        }
+
+        #lineSecond {
+            color: white;
+            font-size: 4.2em;
+            font-weight: 600;
+        }
+
+        .btns {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            justify-content: center;
+
+            button:first-child {
+                color: #ffffffdb;
+                border: 1px solid white;
+                background: transparent;
+                font-size: 14px;
+                padding: 15px 15px;
+                border-radius: 5px;
+                font-weight: 600;
+            }
+
+            button:last-child {
+                background: transparent;
+                color: #ffffffde;
+                border: none;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    color: white;
+
+    .infoBox {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin-top: 73px;
+
+
+        .box {
+            box-sizing: border-box;
+            height: 54vh;
+        }
+
+        .idBox {
+            width: 100%;
+            display: flex;
+            padding: 0 44px;
+            justify-content: space-around;
+            align-items: center;
+
+            .idLeft {
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .idHeading {
+                    font-size: 14px;
+                    color: rgb(255 255 255 / 70%);
+                    font-weight: 600;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 7px;
+
+                    .underline {
+                        background-color: #cb880c;
+                        width: 47px;
+                        height: 2px;
+                    }
+
+                }
+
+                .idTitle {
+                    font-size: 2.2em;
+                    color: white;
+                }
+
+                .idPara {
+                    font-size: 17px;
+                    line-height: 24px;
+                    color: #ffffffde;
+                }
+
+                .btns .butons {
+                    font-size: 13px;
+                    color: #ffffffde;
+                    background-color: #cb880c;
+                    border: none;
+                    padding: 14px 12px;
+                    font-weight: 600;
+                    border-radius: 5px;
+                }
+            }
+
+            .idRight {
+                height: 100%;
+
+                .idImg {
+                    height: 100%;
+                    border-radius: 6px;
+                }
+            }
+
+        }
+    }
+
+    .featuresBox {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        gap: 10px;
+
+        .idBox {
+            border: 2px solid red;
+            width: 100%;
+            height: 45vh;
+            box-sizing: border-box;
+        }
+    }
+}

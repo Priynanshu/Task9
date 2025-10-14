@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #0A1216;
+}
+
+header {
+  background: url(backgroundimage.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  position: relative;
+}
+header nav {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: transparent;
+  color: white;
+  position: absolute;
+  z-index: 2;
+}
+header nav .logo img {
+  width: 45%;
+}
+header nav .list {
+  display: flex;
+  gap: 42px;
+  align-items: center;
+}
+header nav .list a {
+  text-decoration: none;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9882352941);
+}
+header nav .list a:first-child {
+  border-bottom: 2px solid #cb880c;
+  padding: 8px 14px;
+}
+header nav button {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.9882352941);
+  background-color: #cb880c;
+  font-weight: 700;
+  padding: 15px 16px;
+  border: none;
+  border-radius: 4px;
+}
+header .overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+header .heroSection {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  box-sizing: border-box;
+  top: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+header .heroSection .uperLine {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  top: -13px;
+}
+header .heroSection .uperLine span {
+  width: 87px;
+  background-color: #cb880c;
+  height: 2px;
+}
+header .heroSection #lineOne {
+  color: rgba(255, 255, 255, 0.8392156863);
+  font-size: 22px;
+}
+header .heroSection #lineSecond {
+  color: white;
+  font-size: 4.2em;
+  font-weight: 600;
+}
+header .heroSection .btns {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  justify-content: center;
+}
+header .heroSection .btns button:first-child {
+  color: rgba(255, 255, 255, 0.8588235294);
+  border: 1px solid white;
+  background: transparent;
+  font-size: 14px;
+  padding: 15px 15px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+header .heroSection .btns button:last-child {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.8705882353);
+  border: none;
+  font-weight: 700;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+main .infoBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 73px;
+}
+main .infoBox .box {
+  box-sizing: border-box;
+  height: 54vh;
+}
+main .infoBox .idBox {
+  width: 100%;
+  display: flex;
+  padding: 0 44px;
+  justify-content: space-around;
+  align-items: center;
+}
+main .infoBox .idBox .idLeft {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .infoBox .idBox .idLeft .idHeading {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+main .infoBox .idBox .idLeft .idHeading .underline {
+  background-color: #cb880c;
+  width: 47px;
+  height: 2px;
+}
+main .infoBox .idBox .idLeft .idTitle {
+  font-size: 2.2em;
+  color: white;
+}
+main .infoBox .idBox .idLeft .idPara {
+  font-size: 17px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.8705882353);
+}
+main .infoBox .idBox .idLeft .btns .butons {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8705882353);
+  background-color: #cb880c;
+  border: none;
+  padding: 14px 12px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+main .infoBox .idBox .idRight {
+  height: 100%;
+}
+main .infoBox .idBox .idRight .idImg {
+  height: 100%;
+  border-radius: 6px;
+}
+main .featuresBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+}
+main .featuresBox .idBox {
+  border: 2px solid red;
+  width: 100%;
+  height: 45vh;
+  box-sizing: border-box;
+}/*# sourceMappingURL=style.css.map */
