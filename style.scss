@@ -226,10 +226,234 @@ main {
         gap: 10px;
 
         .idBox {
-            border: 2px solid red;
             width: 100%;
             height: 45vh;
             box-sizing: border-box;
+        }
+
+        .upper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            align-items: center;
+            justify-content: center;
+
+            .heading {
+                font-size: 17px;
+                font-weight: 600;
+                padding-bottom: 13px;
+                color: #ffffffa8;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 4px;
+
+                span {
+                    width: 66px;
+                    height: 2px;
+                    background-color: #cb880c;
+                }
+            }
+
+            .title {
+                font-size: 2.6em;
+                font-weight: 600;
+
+            }
+
+            .para {
+                width: 52%;
+                text-align: center;
+                font-size: 15px;
+                font-weight: 600;
+                line-height: 22px;
+                color: #ffffffb5;
+            }
+
+        }
+
+        .bottom {
+            width: 100%;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .flexBox {
+                width: 30%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 19px;
+                align-items: center;
+
+                .titleLogo {
+                    padding-bottom: 17px;
+
+                    img {
+                        width: 100px;
+                        filter: invert(1);
+                    }
+                }
+
+                .title {
+                    font-size: 17px;
+                    font-weight: 600;
+                }
+
+                .para {
+                    text-align: center;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #ffffffb5;
+                    font-weight: 600;
+                }
+
+            }
+        }
+
+    }
+
+    .workingTime {
+        width: 100%;
+        box-sizing: border-box;
+        position: relative;
+
+        .overlay {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            left: 0;
+        }
+
+        img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+
+        .Box {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 7%;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            z-index: 2;
+
+            .idBox {
+                width: 45%;
+                height: 100%;
+
+                .leftBox {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .leftInBox {
+                    text-align: justify;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    margin-left: 90px;
+                }
+            }
+
+            .leftBox {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                align-items: center;
+                justify-content: center;
+
+                .heading {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: rgb(255 255 255 / 65%);
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+
+                    span {
+                        width: 83px;
+                        height: 2.5px;
+                        background-color: #cb880c;
+                    }
+                }
+
+                .title {
+                    font-size: 4.1em;
+                    color: #ffffffe6;
+                }
+
+                .btns {
+                    display: flex;
+                    align-items: center;
+                    gap: 24px;
+
+                    button:first-child {
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: rgb(255 255 255);
+                        background-color: #cb880c;
+                        border: none;
+                        padding: 18px 18px;
+                        border-radius: 5px;
+                    }
+
+                    button:last-child {
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: #ffffffe6;
+                        background: transparent;
+                        border: none;
+                    }
+                }
+            }
+
+            .rightBox {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .timeBox {
+                    height: 428px;
+                    width: 420px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    background-color: #0A1216;
+                    color: rgba(255, 255, 255, 0.857);
+
+                    .idTime {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        align-items: center;
+
+                        span:first-child {
+                            font-size: 24px;
+                            font-weight: 600;
+
+                        }
+
+                        span:last-child {
+                            font-size: 18px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
         }
     }
 }

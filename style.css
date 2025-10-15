@@ -195,8 +195,198 @@ main .featuresBox {
   gap: 10px;
 }
 main .featuresBox .idBox {
-  border: 2px solid red;
   width: 100%;
   height: 45vh;
   box-sizing: border-box;
+}
+main .featuresBox .upper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+}
+main .featuresBox .upper .heading {
+  font-size: 17px;
+  font-weight: 600;
+  padding-bottom: 13px;
+  color: rgba(255, 255, 255, 0.6588235294);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+main .featuresBox .upper .heading span {
+  width: 66px;
+  height: 2px;
+  background-color: #cb880c;
+}
+main .featuresBox .upper .title {
+  font-size: 2.6em;
+  font-weight: 600;
+}
+main .featuresBox .upper .para {
+  width: 52%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.7098039216);
+}
+main .featuresBox .bottom {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+main .featuresBox .bottom .flexBox {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  align-items: center;
+}
+main .featuresBox .bottom .flexBox .titleLogo {
+  padding-bottom: 17px;
+}
+main .featuresBox .bottom .flexBox .titleLogo img {
+  width: 100px;
+  filter: invert(1);
+}
+main .featuresBox .bottom .flexBox .title {
+  font-size: 17px;
+  font-weight: 600;
+}
+main .featuresBox .bottom .flexBox .para {
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.7098039216);
+  font-weight: 600;
+}
+main .workingTime {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+main .workingTime .overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+main .workingTime img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+main .workingTime .Box {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 7%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 2;
+}
+main .workingTime .Box .idBox {
+  width: 45%;
+  height: 100%;
+}
+main .workingTime .Box .idBox .leftBox {
+  display: flex;
+  align-items: center;
+}
+main .workingTime .Box .idBox .leftInBox {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: 90px;
+}
+main .workingTime .Box .leftBox {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+main .workingTime .Box .leftBox .heading {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.65);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+main .workingTime .Box .leftBox .heading span {
+  width: 83px;
+  height: 2.5px;
+  background-color: #cb880c;
+}
+main .workingTime .Box .leftBox .title {
+  font-size: 4.1em;
+  color: rgba(255, 255, 255, 0.9019607843);
+}
+main .workingTime .Box .leftBox .btns {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+main .workingTime .Box .leftBox .btns button:first-child {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  background-color: #cb880c;
+  border: none;
+  padding: 18px 18px;
+  border-radius: 5px;
+}
+main .workingTime .Box .leftBox .btns button:last-child {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9019607843);
+  background: transparent;
+  border: none;
+}
+main .workingTime .Box .rightBox {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .workingTime .Box .rightBox .timeBox {
+  height: 428px;
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #0A1216;
+  color: rgba(255, 255, 255, 0.857);
+}
+main .workingTime .Box .rightBox .timeBox .idTime {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+main .workingTime .Box .rightBox .timeBox .idTime span:first-child {
+  font-size: 24px;
+  font-weight: 600;
+}
+main .workingTime .Box .rightBox .timeBox .idTime span:last-child {
+  font-size: 18px;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */
