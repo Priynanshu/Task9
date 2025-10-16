@@ -389,4 +389,195 @@ main .workingTime .Box .rightBox .timeBox .idTime span:first-child {
 main .workingTime .Box .rightBox .timeBox .idTime span:last-child {
   font-size: 18px;
   font-weight: 600;
+}
+main .feedBack {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+  align-items: center;
+}
+main .feedBack .idBox {
+  width: 100%;
+  height: 50vh;
+  box-sizing: border-box;
+}
+main .feedBack .upper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+}
+main .feedBack .upper .heading {
+  font-size: 17px;
+  font-weight: 600;
+  padding-bottom: 13px;
+  color: rgba(255, 255, 255, 0.6588235294);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+main .feedBack .upper .heading span {
+  width: 66px;
+  height: 2px;
+  background-color: #cb880c;
+}
+main .feedBack .upper .title {
+  font-size: 2.6em;
+  font-weight: 600;
+}
+main .feedBack .upper .para {
+  width: 52%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.7098039216);
+}
+main .feedBack .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+main .feedBack .bottom .flexBox {
+  width: 30%;
+  height: 100%;
+  background-color: #10191A;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-items: center;
+  padding-bottom: 16px;
+}
+main .feedBack .bottom .flexBox .quostion {
+  font-size: 44px;
+  position: relative;
+  bottom: 13%;
+  background-color: #111819;
+  color: #FCBB2E;
+  border-radius: 50%;
+  padding: 7px 10px;
+  left: 50px;
+  box-shadow: 0px 4px 0px 1px #0d1010;
+}
+main .feedBack .bottom .flexBox .text {
+  width: 93%;
+  font-size: 17px;
+  line-height: 25px;
+  text-align: center;
+  color: #6B7174;
+}
+main .feedBack .bottom .flexBox .rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+main .feedBack .bottom .flexBox .rating .starimg {
+  padding-bottom: 7px;
+  color: #FCBB2E;
+}
+main .feedBack .bottom .flexBox .rating .name {
+  font-size: 16px;
+  font-weight: 600;
+}
+main .feedBack .bottom .flexBox .rating .proffesion {
+  font-size: 15px;
+  color: #6B7174;
+}
+main .feedBack .scrollDot {
+  padding: 20px 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+main .sellingNumbers {
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  gap: 10px;
+  box-sizing: border-box;
+  justify-content: space-around;
+  align-items: center;
+}
+main .sellingNumbers .box {
+  width: 20%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #ECEFEF;
+}
+main .sellingNumbers .box .headNum {
+  display: flex;
+  align-items: center;
+}
+main .sellingNumbers .box .headNum .plus {
+  color: #cb880c;
+}
+main .sellingNumbers .box span {
+  font-size: 14px;
+  font-weight: 600;
+}
+main .installBox {
+  width: 100%;
+  height: 60vh;
+  box-sizing: border-box;
+  background: url(vegtables.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .installBox .box {
+  width: 45%;
+  height: 100%;
+}
+main .installBox .leftSide {
+  display: flex;
+  justify-content: center;
+}
+main .installBox .leftSide .center {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  justify-content: center;
+}
+main .installBox .leftSide .center h1 {
+  font-weight: 600;
+  width: 318px;
+  font-size: 40px;
+  line-height: 57px;
+}
+main .installBox .leftSide .center .btns {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+main .installBox .leftSide .center .btns button {
+  background: white;
+  border: none;
+  font-weight: 600;
+  font-size: 22px;
+  padding: 17px 12px;
+  border-radius: 8px;
+}
+main .installBox .leftSide .center .btns button #icon {
+  font-size: 35px;
+}
+main .installBox .rightSide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .installBox .rightSide img {
+  height: 512px;
 }/*# sourceMappingURL=style.css.map */
