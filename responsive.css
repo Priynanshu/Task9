@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #121212;
+  font-family: Helvetica, sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  background-color: #121212;
+  color: white;
+}
+main nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+}
+main nav .left a {
+  font-size: 1.3em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 100;
+}
+main nav .right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+main nav .right a {
+  font-size: 17px;
+  font-family: Helvetica, sans-serif;
+  background-color: #2A2A2A;
+  padding: 14px 10px;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.889);
+}
+main nav .right #unique {
+  background-color: #AD9D49;
+  padding: 14px 18px;
+  color: black;
+}
+main nav .menu {
+  display: none;
+}
+main .hero {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  gap: 13px;
+}
+main .hero .Box {
+  width: 50%;
+  border-radius: 13px;
+}
+main .hero .leftBox img {
+  width: 100%;
+  border-radius: 13px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .hero .rightBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 22px 17px;
+  background-color: #1E1E1E;
+}
+main .hero .rightBox .btnTop span {
+  font-size: 14px;
+}
+main .hero .rightBox .title {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+main .hero .rightBox .title h2 {
+  font-size: 4.5em;
+  font-weight: 100;
+}
+main .hero .rightBox .para {
+  width: 90%;
+  font-size: 18px;
+}
+main .hero .rightBox .btnBottom span {
+  font-size: 14px;
+}
+main .numberBox {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 79px 35px;
+  display: flex;
+  gap: 86px;
+  justify-content: space-around;
+}
+main .numberBox .box1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+}
+main .numberBox .box1 span {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.768);
+}
+main .numberBox .box1 p {
+  font-size: 3.5em;
+  color: #F4F2ED;
+}
+
+@media (max-width: 900px) {
+  .right a {
+    display: none;
+  }
+  main nav .menu {
+    display: block;
+    color: white;
+    font-size: 30px;
+  }
+}
+@media (max-width: 1100px) {
+  main .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+  main .hero .Box {
+    width: 100%;
+    border-radius: 13px;
+  }
+  main .hero .rightBox {
+    gap: 61px;
+    box-sizing: border-box;
+  }
+}/*# sourceMappingURL=responsive.css.map */

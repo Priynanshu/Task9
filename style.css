@@ -29,32 +29,47 @@ header nav {
   color: white;
   position: absolute;
   z-index: 2;
+  box-sizing: border-box;
 }
 header nav .logo img {
   width: 45%;
 }
 header nav .list {
   display: flex;
-  gap: 42px;
+  gap: 30px;
   align-items: center;
+  box-sizing: border-box;
 }
 header nav .list a {
   text-decoration: none;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.9882352941);
+  transition: all 0.3s ease-in;
+  box-sizing: border-box;
+  padding: 8px 14px;
 }
 header nav .list a:first-child {
-  border-bottom: 2px solid #cb880c;
-  padding: 8px 14px;
+  border-bottom: 2px solid #D78241;
+}
+header nav .list a:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #D78241;
 }
 header nav button {
   font-size: 13px;
   color: rgba(255, 255, 255, 0.9882352941);
-  background-color: #cb880c;
+  background-color: #D78241;
   font-weight: 700;
   padding: 15px 16px;
-  border: none;
+  border: 1px solid transparent;
   border-radius: 4px;
+}
+header nav button:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8588235294);
+  border: 1px solid white;
+  background: transparent;
+  transition: all 0.3s ease;
 }
 header .overlay {
   height: 100%;
@@ -86,7 +101,7 @@ header .heroSection .uperLine {
 }
 header .heroSection .uperLine span {
   width: 87px;
-  background-color: #cb880c;
+  background-color: #D78241;
   height: 2px;
 }
 header .heroSection #lineOne {
@@ -113,11 +128,25 @@ header .heroSection .btns button:first-child {
   border-radius: 5px;
   font-weight: 600;
 }
+header .heroSection .btns button:first-child:hover {
+  background-color: #D78241;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
 header .heroSection .btns button:last-child {
   background: transparent;
   color: rgba(255, 255, 255, 0.8705882353);
   border: none;
   font-weight: 700;
+}
+header .heroSection .btns button:last-child:hover {
+  font-size: 14px;
+  padding: 15px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #D78241;
+  transition: all 0.3s ease;
 }
 
 main {
@@ -158,7 +187,7 @@ main .infoBox .idBox .idLeft .idHeading {
   gap: 7px;
 }
 main .infoBox .idBox .idLeft .idHeading .underline {
-  background-color: #cb880c;
+  background-color: #D78241;
   width: 47px;
   height: 2px;
 }
@@ -174,11 +203,18 @@ main .infoBox .idBox .idLeft .idPara {
 main .infoBox .idBox .idLeft .btns .butons {
   font-size: 13px;
   color: rgba(255, 255, 255, 0.8705882353);
-  background-color: #cb880c;
-  border: none;
+  background-color: #D78241;
+  border: 1px solid transparent;
   padding: 14px 12px;
   font-weight: 600;
   border-radius: 5px;
+}
+main .infoBox .idBox .idLeft .butons:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8588235294);
+  border: 1px solid white;
+  background: transparent;
+  transition: all 0.3s ease;
 }
 main .infoBox .idBox .idRight {
   height: 100%;
@@ -220,7 +256,7 @@ main .featuresBox .upper .heading {
 main .featuresBox .upper .heading span {
   width: 66px;
   height: 2px;
-  background-color: #cb880c;
+  background-color: #D78241;
 }
 main .featuresBox .upper .title {
   font-size: 2.6em;
@@ -332,7 +368,7 @@ main .workingTime .Box .leftBox .heading {
 main .workingTime .Box .leftBox .heading span {
   width: 83px;
   height: 2.5px;
-  background-color: #cb880c;
+  background-color: #D78241;
 }
 main .workingTime .Box .leftBox .title {
   font-size: 4.1em;
@@ -347,10 +383,17 @@ main .workingTime .Box .leftBox .btns button:first-child {
   font-size: 14px;
   font-weight: 600;
   color: rgb(255, 255, 255);
-  background-color: #cb880c;
-  border: none;
+  background-color: #D78241;
+  border: 1px solid transparent;
   padding: 18px 18px;
   border-radius: 5px;
+}
+main .workingTime .Box .leftBox .btns button:first-child:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8588235294);
+  border: 1px solid white;
+  background: transparent;
+  transition: all 0.3s ease;
 }
 main .workingTime .Box .leftBox .btns button:last-child {
   font-size: 14px;
@@ -358,6 +401,13 @@ main .workingTime .Box .leftBox .btns button:last-child {
   color: rgba(255, 255, 255, 0.9019607843);
   background: transparent;
   border: none;
+}
+main .workingTime .Box .leftBox .btns button:last-child:hover {
+  border: 1px solid white;
+  padding: 16px 18px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 main .workingTime .Box .rightBox {
   height: 100%;
@@ -424,7 +474,7 @@ main .feedBack .upper .heading {
 main .feedBack .upper .heading span {
   width: 66px;
   height: 2px;
-  background-color: #cb880c;
+  background-color: #D78241;
 }
 main .feedBack .upper .title {
   font-size: 2.6em;
@@ -580,4 +630,101 @@ main .installBox .rightSide {
 }
 main .installBox .rightSide img {
   height: 512px;
+}
+main footer {
+  width: 100%;
+  height: 50vh;
+  box-sizing: border-box;
+  margin-top: 7%;
+  display: flex;
+  align-items: center;
+  background-color: #121B1C;
+  gap: 60px;
+}
+main footer .foot {
+  height: 100%;
+  box-sizing: border-box;
+}
+main footer .leftFoot {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  padding-left: 9%;
+}
+main footer .leftFoot .logo img {
+  width: 27%;
+}
+main footer .leftFoot .text {
+  font-size: 14px;
+  line-height: 22px;
+  position: relative;
+  bottom: 4%;
+  opacity: 0.5;
+}
+main footer .leftFoot .app {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main footer .leftFoot .app i {
+  background-color: #FEFDFD;
+  color: #CA8243;
+  font-size: 21px;
+  padding: 7px 8px;
+  border-radius: 50%;
+}
+main footer .rightFoot {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+main footer .rightFoot #uniBox {
+  position: relative;
+  right: 65px;
+}
+main footer .rightFoot #uniBox button {
+  width: 102px;
+  font-size: 16px;
+  color: white;
+  background: #D78241;
+  border: 1px solid transparent;
+  font-weight: 600;
+  padding: 13px 20px;
+  border-radius: 4px;
+}
+main footer .rightFoot #uniBox button:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8588235294);
+  border: 1px solid white;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+main footer .rightFoot .box {
+  width: 32%;
+  height: 78%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 18px;
+}
+main footer .rightFoot .box .heading {
+  font-weight: 600;
+  font-size: 17px;
+  opacity: 0.9;
+}
+main footer .rightFoot .box .info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+main footer .rightFoot .box .info span {
+  font-size: 16px;
+  opacity: 0.5;
+}
+main footer .rightFoot .box .info #unique {
+  line-height: 23px;
 }/*# sourceMappingURL=style.css.map */
