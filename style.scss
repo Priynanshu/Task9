@@ -19,6 +19,16 @@ header {
     box-sizing: border-box;
     position: relative;
 
+    .overlay {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+    }
+
     nav {
         height: 150px;
         width: 100%;
@@ -30,9 +40,12 @@ header {
         position: absolute;
         z-index: 2;
         box-sizing: border-box;
+        padding: 0 5%;
 
         .logo img {
             width: 45%;
+            max-width: 200px;
+            transition: width 0.3s ease;
         }
 
         .list {
@@ -46,8 +59,8 @@ header {
                 font-size: 16px;
                 color: #fffffffc;
                 transition: all 0.3s ease-in;
+                padding: 8px 14px;
                 box-sizing: border-box;
-                padding: 8px 14px
             }
 
             a:first-child {
@@ -68,6 +81,7 @@ header {
             padding: 15px 16px;
             border: 1px solid transparent;
             border-radius: 4px;
+            transition: all 0.3s ease;
         }
 
         button:hover {
@@ -75,20 +89,18 @@ header {
             color: #ffffffdb;
             border: 1px solid white;
             background: transparent;
-            transition: all 0.3s ease;
+        }
+
+        .menu {
+            display: none;
+            font-size: 28px;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.3s ease;
         }
     }
 
-    .overlay {
-        height: 100%;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
-        position: absolute;
-        z-index: 2;
-        top: 0;
-        left: 0;
-    }
-
+    /* ===== Hero Section ===== */
     .heroSection {
         width: 100%;
         position: absolute;
@@ -99,6 +111,7 @@ header {
         display: flex;
         flex-direction: column;
         gap: 24px;
+        transform: translateY(-50%);
 
         .uperLine {
             display: flex;
@@ -108,24 +121,25 @@ header {
             z-index: 2;
             top: -13px;
 
-
-
             span {
                 width: 87px;
                 background-color: #D78241;
                 height: 2px;
+                transition: width 0.3s ease;
             }
         }
 
         #lineOne {
             color: #ffffffd6;
             font-size: 22px;
+            transition: font-size 0.3s ease;
         }
 
         #lineSecond {
             color: white;
             font-size: 4.2em;
             font-weight: 600;
+            transition: font-size 0.3s ease;
         }
 
         .btns {
@@ -133,6 +147,7 @@ header {
             align-items: center;
             gap: 22px;
             justify-content: center;
+            flex-wrap: wrap;
 
             button:first-child {
                 color: #ffffffdb;
@@ -142,12 +157,12 @@ header {
                 padding: 15px 15px;
                 border-radius: 5px;
                 font-weight: 600;
+                transition: all 0.3s ease;
             }
 
             button:first-child:hover {
                 background-color: #D78241;
                 border: 1px solid transparent;
-                transition: all 0.3s ease;
                 cursor: pointer;
             }
 
@@ -156,15 +171,15 @@ header {
                 color: #ffffffde;
                 border: none;
                 font-weight: 700;
-            }
-
-            button:last-child:hover {
                 font-size: 14px;
                 padding: 15px 15px;
                 border-radius: 5px;
-                cursor: pointer;
-                background: #D78241;
                 transition: all 0.3s ease;
+            }
+
+            button:last-child:hover {
+                background: #D78241;
+                cursor: pointer;
             }
         }
     }
@@ -213,19 +228,22 @@ main {
                         background-color: #D78241;
                         width: 47px;
                         height: 2px;
+                        transition: width 0.3s ease;
                     }
-
                 }
+
 
                 .idTitle {
                     font-size: 2.2em;
                     color: white;
+                    transition: font-size 0.3s ease;
                 }
 
                 .idPara {
                     font-size: 17px;
                     line-height: 24px;
                     color: #ffffffde;
+                    transition: font-size 0.3s ease;
                 }
 
                 .btns .butons {
@@ -236,14 +254,14 @@ main {
                     padding: 14px 12px;
                     font-weight: 600;
                     border-radius: 5px;
-                }
-
-                .butons:hover {
-                    cursor: pointer;
-                    color: #ffffffdb;
-                    border: 1px solid white;
-                    background: transparent;
                     transition: all 0.3s ease;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: #ffffffdb;
+                        border: 1px solid white;
+                        background: transparent;
+                    }
                 }
             }
 
@@ -253,6 +271,7 @@ main {
                 .idImg {
                     height: 100%;
                     border-radius: 6px;
+                    transition: height 0.3s ease;
                 }
             }
 
@@ -852,6 +871,185 @@ main {
                         line-height: 23px;
                     }
 
+                }
+            }
+        }
+    }
+}
+
+/* Medium / Tablet Screens */
+@media (max-width: 1000px) {
+    nav {
+        height: 120px;
+        padding: 0 4%;
+
+        .logo img {
+            width: 40%;
+        }
+
+        .list a {
+            font-size: 15px;
+            padding: 6px 10px;
+        }
+
+        button {
+            padding: 12px 14px;
+            font-size: 12px;
+        }
+    }
+
+    .heroSection {
+        gap: 18px;
+
+        .uperLine span {
+            width: 70px;
+        }
+
+        #lineOne {
+            font-size: 20px;
+        }
+
+        #lineSecond {
+            font-size: 3.5em;
+        }
+
+        .btns button {
+            font-size: 13px;
+            padding: 12px 12px;
+        }
+
+        .btns {
+            gap: 16px;
+        }
+    }
+
+    .infoBox {
+        gap: 2px;
+
+        .idBox {
+            padding: 0 30px;
+            gap: 25px;
+
+            .idLeft {
+                .idTitle {
+                    font-size: 2em;
+                }
+
+                .idPara {
+                    font-size: 16px;
+                }
+
+                .btns .butons {
+                    font-size: 12px;
+                    padding: 12px 10px;
+                }
+
+                .idHeading .underline {
+                    width: 40px;
+                }
+            }
+
+            .idRight {
+                .idImg {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 700px) {
+    nav {
+        height: 90px;
+        padding: 0 25px;
+
+        .logo img {
+            width: 35%;
+        }
+
+        .list,
+        button {
+            display: none;
+        }
+
+        .menu {
+            display: block;
+        }
+    }
+
+    .heroSection {
+        gap: 12px;
+
+        .uperLine span {
+            width: 50px;
+        }
+
+        #lineOne {
+            font-size: 16px;
+        }
+
+        #lineSecond {
+            font-size: 2.5em;
+        }
+
+        .btns {
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btns button {
+            font-size: 12px;
+            padding: 10px 12px;
+            width: 150px;
+        }
+    }
+
+    .infoBox {
+        gap: 20px;
+
+        .idBox {
+            flex-direction: column;
+            padding: 0 20px;
+
+            .idLeft,
+            .idRight {
+                width: 100%;
+            }
+
+            .idLeft {
+                gap: 15px;
+
+                .idTitle {
+                    font-size: 1.8em;
+                }
+
+                .idPara {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+
+                .btns {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+
+                    .butons {
+                        width: 150px;
+                        font-size: 12px;
+                        padding: 10px 12px;
+                    }
+                }
+
+                .idHeading .underline {
+                    width: 35px;
+                }
+            }
+
+            .idRight {
+                .idImg {
+                    height: auto;
+                    width: 100%;
                 }
             }
         }
